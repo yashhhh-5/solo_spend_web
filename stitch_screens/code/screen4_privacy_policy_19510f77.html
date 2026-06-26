@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Privacy Policy | Solo Spend</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;display=swap" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-panel {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(45, 45, 45, 0.5);
+        }
+
+        .primary-glow:hover {
+            box-shadow: 0 0 20px rgba(42, 157, 143, 0.2);
+        }
+
+        ::selection {
+            background-color: #2a9d8f;
+            color: #ffffff;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #131313;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #353534;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2a9d8f;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#1c6b62",
+                        "tertiary-container": "#e9ddff",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-background": "#e5e2e1",
+                        "surface-container": "#201f1f",
+                        "inverse-on-surface": "#313030",
+                        "surface-tint": "#2a9d8f",
+                        "surface": "#131313",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "inverse-surface": "#e5e2e1",
+                        "primary-container": "#2a9d8f",
+                        "on-tertiary-fixed": "#23005c",
+                        "on-secondary": "#313030",
+                        "tertiary-fixed": "#e9ddff",
+                        "outline-variant": "#444933",
+                        "background": "#131313",
+                        "outline": "#8e9379",
+                        "on-surface": "#e5e2e1",
+                        "surface-bright": "#3a3939",
+                        "surface-dim": "#131313",
+                        "error": "#ffb4ab",
+                        "secondary": "#c8c6c5",
+                        "tertiary": "#ffffff",
+                        "on-tertiary-container": "#7342dd",
+                        "surface-variant": "#353534",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-surface-variant": "#c4c9ac",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-error-container": "#ffdad6",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#5516be",
+                        "on-tertiary": "#3c0091",
+                        "on-error": "#690005",
+                        "inverse-primary": "#1c6b62",
+                        "primary-fixed": "#2a9d8f",
+                        "primary": "#ffffff",
+                        "surface-container-highest": "#353534",
+                        "on-primary-fixed": "#ffffff",
+                        "on-primary-container": "#ffffff",
+                        "primary-fixed-dim": "#23857a",
+                        "secondary-fixed": "#e5e2e1",
+                        "tertiary-fixed-dim": "#d0bcff",
+                        "secondary-container": "#474746",
+                        "on-secondary-container": "#b7b5b4",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "base": "8px",
+                        "container-max-width": "1200px",
+                        "section-gap-mobile": "64px",
+                        "section-gap-desktop": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-xl-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Geist"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-white">
+    <!-- TopAppBar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10 flex justify-between items-center px-gutter py-4">
+        <div class="flex items-center gap-3">
+            <a class="active:scale-95 transition-transform flex items-center gap-2 group" href="#">
+                <span
+                    class="material-symbols-outlined text-primary-fixed group-hover:text-primary transition-colors">arrow_back</span>
+                <span
+                    class="font-label-md text-label-md text-on-surface group-hover:text-primary-fixed transition-colors">Back
+                    to Home</span>
+            </a>
+        </div>
+        <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary-fixed"
+                style="font-variation-settings: 'FILL' 1;">shield</span>
+            <span
+                class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg font-extrabold text-on-surface tracking-tighter">Solo
+                Spend</span>
+        </div>
+        <div class="hidden md:flex items-center">
+            <button
+                class="bg-primary-fixed text-white px-6 py-2 rounded-full font-label-md text-label-md font-bold hover:bg-white hover:text-background transition-colors active:scale-95">
+                Get App
+            </button>
+        </div>
+        <!-- Spacer for mobile consistency -->
+        <div class="md:hidden w-10"></div>
+    </header>
+    <main class="pt-32 pb-section-gap-mobile md:pb-section-gap-desktop max-w-[800px] mx-auto px-gutter">
+        <!-- Hero Section -->
+        <section class="mb-16">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/10 border border-primary-container/20 mb-6">
+                <span class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span>
+                <span class="font-label-md text-label-md text-primary-fixed uppercase tracking-widest">Security
+                    First</span>
+            </div>
+            <h1
+                class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface mb-6">
+                Privacy Policy
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                Solo Spend is engineered with a radical commitment to data sovereignty. Our privacy policy is simple
+                because our architecture is private by design.
+            </p>
+        </section>
+        <!-- Policy Content Grid -->
+        <div class="space-y-12">
+            <!-- Section 1: Data Sovereignty -->
+            <article class="group">
+                <div class="flex items-start gap-6">
+                    <div
+                        class="mt-1 flex-shrink-0 w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant flex items-center justify-center group-hover:border-primary-fixed transition-colors">
+                        <span class="material-symbols-outlined text-primary-fixed">database</span>
+                    </div>
+                    <div>
+                        <h2
+                            class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary-fixed mb-4">
+                            Data Sovereignty
+                        </h2>
+                        <div class="font-body-md text-body-md text-on-surface-variant space-y-4">
+                            <p>
+                                At the core of Solo Spend is the <span class="text-on-surface font-bold">Hive
+                                    database</span>. Unlike conventional financial apps that sync your sensitive
+                                transactions to the cloud, Solo Spend operates strictly on-device.
+                            </p>
+                            <p>
+                                Every expense, category, and budget you create is encrypted and stored within your
+                                device's secure local storage. Your financial identity never leaves your physical
+                                possession. We do not have servers, and we do not have access to your keys.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Section 2: No Internet Permissions -->
+            <article class="group">
+                <div class="flex items-start gap-6">
+                    <div
+                        class="mt-1 flex-shrink-0 w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant flex items-center justify-center group-hover:border-primary-fixed transition-colors">
+                        <span class="material-symbols-outlined text-primary-fixed">signal_wifi_off</span>
+                    </div>
+                    <div>
+                        <h2
+                            class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary-fixed mb-4">
+                            No Internet Permissions
+                        </h2>
+                        <div class="font-body-md text-body-md text-on-surface-variant space-y-4">
+                            <p>
+                                Transparency is our ultimate security feature. Solo Spend is built to function entirely
+                                <span class="text-on-surface font-bold">offline</span>.
+                            </p>
+                            <p>
+                                The application binary does not request `android.permission.INTERNET` or similar
+                                networking capabilities. This architectural constraint ensures that even if there were a
+                                vulnerability, the app has no physical pathway to transmit data across the web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Section 3: Third-Party Access -->
+            <article class="group">
+                <div class="flex items-start gap-6">
+                    <div
+                        class="mt-1 flex-shrink-0 w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant flex items-center justify-center group-hover:border-primary-fixed transition-colors">
+                        <span class="material-symbols-outlined text-primary-fixed">visibility_off</span>
+                    </div>
+                    <div>
+                        <h2
+                            class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary-fixed mb-4">
+                            Third-Party Access
+                        </h2>
+                        <div class="font-body-md text-body-md text-on-surface-variant space-y-4">
+                            <p>
+                                Solo Spend does not integrate with third-party analytics, crash reporting tools like
+                                Firebase or Sentry, or advertising SDKs.
+                            </p>
+                            <p>
+                                We believe that "anonymized" tracking is still tracking. By removing all external
+                                dependencies, we eliminate the risk of third-party data leaks and background profiling.
+                                Your usage patterns are your business alone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Section 4: User Control -->
+            <article class="group">
+                <div class="flex items-start gap-6">
+                    <div
+                        class="mt-1 flex-shrink-0 w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant flex items-center justify-center group-hover:border-primary-fixed transition-colors">
+                        <span class="material-symbols-outlined text-primary-fixed">folder_shared</span>
+                    </div>
+                    <div>
+                        <h2
+                            class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary-fixed mb-4">
+                            User Control
+                        </h2>
+                        <div class="font-body-md text-body-md text-on-surface-variant space-y-4">
+                            <p>
+                                You own your data. Solo Spend provides robust tools for you to manage your information:
+                            </p>
+                            <ul class="list-disc pl-5 space-y-2 text-on-secondary-container">
+                                <li><span class="text-on-surface font-medium">Export to PDF:</span> Generate
+                                    professional financial summaries for your own records or tax purposes.</li>
+                                <li><span class="text-on-surface font-medium">Local Backups:</span> Export your Hive
+                                    database encrypted file to move between devices manually.</li>
+                                <li><span class="text-on-surface font-medium">Nuke Option:</span> A single-tap "Delete
+                                    All Data" function that wipes the local database and cache instantly.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Decorative Visual Separator -->
+            <div class="relative h-64 w-full rounded-2xl overflow-hidden mt-20 border border-outline-variant">
+                <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+                    <span class="material-symbols-outlined text-primary-fixed text-4xl mb-2"
+                        style="font-variation-settings: 'FILL' 1;">verified_user</span>
+                    <p class="font-label-md text-label-md text-on-surface tracking-widest uppercase">Verified Offline
+                        Integrity</p>
+                </div>
+            </div>
+        </div>
+        <!-- Contact/Disclaimer -->
+        <section class="mt-24 p-8 rounded-2xl bg-surface-container-low border border-outline-variant/30">
+            <h3 class="font-label-md text-label-md font-bold text-on-surface mb-4">Questions?</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+                As an offline-first tool, we don't collect support tickets via the app. For technical documentation or
+                to audit our privacy claims, please visit our open-source repository on Github.
+            </p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full py-section-gap-mobile bg-surface-container-lowest border-t border-outline-variant/30 flex flex-col items-center gap-6 px-gutter text-center">
+        <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary-fixed">shield</span>
+            <span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-widest">Solo
+                Spend</span>
+        </div>
+        <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+            <a class="font-body-md text-body-md text-on-secondary-container hover:text-primary-fixed transition-colors"
+                href="#">Privacy Policy</a>
+        </nav>
+        <p class="font-body-md text-body-md text-on-secondary-container max-w-md">
+            © 2024 Solo Spend. Engineered for Privacy. No data collection, no cloud, no compromise.
+        </p>
+        <!-- Back to Top Micro-interaction -->
+        <button
+            class="mt-4 w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary-fixed hover:text-white transition-all group"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <span class="material-symbols-outlined text-sm">arrow_upward</span>
+        </button>
+    </footer>
+    <script>
+        // Simple scroll observer for header transparency/border logic
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.add('bg-background/95', 'shadow-lg');
+                header.classList.remove('bg-background/80');
+            } else {
+                header.classList.remove('bg-background/95', 'shadow-lg');
+                header.classList.add('bg-background/80');
+            }
+        });
+    </script>
+</body>
+
+</html>

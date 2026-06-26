@@ -1,0 +1,130 @@
+﻿{
+    "designSystem":  {
+                         "displayName":  "Obsidian Edge",
+                         "styleGuidelines":  "## Brand \u0026 Style\nThe design system embodies a high-performance, technical aesthetic tailored for developer tools and sophisticated SaaS environments. The brand personality is precise, focused, and quietly powerful. It targets power users who value efficiency and deep focus over decorative flair.\n\nThe visual style is a fusion of **Minimalism** and **Geist-inspired Technicality**. It leverages a deep monochromatic foundation punctuated by a single, vibrant turquoise accent. The interface feels \"engineered\" rather than \"decorated,\" utilizing rigorous grid alignment and deliberate whitespace to manage cognitive load. The emotional response is one of calm control and professional-grade reliability.\n\n## Layout \u0026 Spacing\nThe layout follows a **Fixed Grid** philosophy for desktop and a fluid single-column approach for mobile. \n\n- **Navigation:** The system moves away from bottom bars and complex sidebars in favor of a clean, single-page flow or a top-aligned \"minimalist utility bar.\" \n- **Structure:** Use a 12-column grid on desktop (max-width 1200px) and a single-column layout on mobile. \n- **Rhythm:** All spacing is based on a 4px baseline unit. Prefer generous padding within cards (24px) to ensure the dark theme feels airy rather than cramped. Elements should be grouped logically using \"proximity over borders.\"\n\n## Elevation \u0026 Depth\nIn this design system, depth is communicated through **Tonal Layering** and **Low-Contrast Outlines** rather than physical shadows.\n\n- **Level 0 (Background):** #121212 (The void).\n- **Level 1 (Cards/Sections):** #1e1e1e with a 1px border of #333333.\n- **Level 2 (Modals/Popovers):** #252525 with a slightly brighter border (#444444).\n- **Interactions:** Use subtle inner-glows (0.5px white at 10% opacity) on primary buttons to suggest a slight tactile lift without breaking the minimalist plane.\n\n## Components\n- **Buttons:** Primary buttons use a solid turquoise (#2a9d8f) background with black text for maximum legibility. Secondary buttons are outlined with #333333.\n- **Inputs:** Fields are dark (#1e1e1e) with a subtle bottom border or 1px perimeter border. Focus states must glow with a 2px turquoise outer stroke.\n- **Cards:** No shadows. Use tonal separation and a fine 1px border. Content inside cards should follow the 24px internal padding rule.\n- **Chips/Badges:** Use JetBrains Mono for text. Backgrounds should be low-opacity versions of the primary color (e.g., turquoise at 15% opacity).\n- **Navigation:** A single-page header containing only essential actions. Use a \"Breadcrumb + Action\" pattern to keep the UI clean and focused on the current task.\n- **Data Visualization:** Use turquoise as the primary data point color, supported by neutral grays for secondary data sets.",
+                         "theme":  {
+                                       "bodyFont":  "GEIST",
+                                       "bodyFontFamily":  "Geist",
+                                       "colorMode":  "DARK",
+                                       "colorVariant":  "FIDELITY",
+                                       "customColor":  "#2a9d8f",
+                                       "designMd":  "---\nname: Obsidian Edge\ncolors:\n  surface: \u0027#131313\u0027\n  surface-dim: \u0027#131313\u0027\n  surface-bright: \u0027#393939\u0027\n  surface-container-lowest: \u0027#0e0e0e\u0027\n  surface-container-low: \u0027#1c1b1b\u0027\n  surface-container: \u0027#201f1f\u0027\n  surface-container-high: \u0027#2a2a2a\u0027\n  surface-container-highest: \u0027#353534\u0027\n  on-surface: \u0027#e5e2e1\u0027\n  on-surface-variant: \u0027#bcc9c6\u0027\n  inverse-surface: \u0027#e5e2e1\u0027\n  inverse-on-surface: \u0027#313030\u0027\n  outline: \u0027#879390\u0027\n  outline-variant: \u0027#3d4947\u0027\n  surface-tint: \u0027#6fd8c8\u0027\n  primary: \u0027#6fd8c8\u0027\n  on-primary: \u0027#003731\u0027\n  primary-container: \u0027#30a193\u0027\n  on-primary-container: \u0027#00302a\u0027\n  inverse-primary: \u0027#006a60\u0027\n  secondary: \u0027#abcbdb\u0027\n  on-secondary: \u0027#123441\u0027\n  secondary-container: \u0027#2b4b58\u0027\n  on-secondary-container: \u0027#99baca\u0027\n  tertiary: \u0027#ffb59e\u0027\n  on-tertiary: \u0027#5a1c06\u0027\n  tertiary-container: \u0027#d3795b\u0027\n  on-tertiary-container: \u0027#501502\u0027\n  error: \u0027#ffb4ab\u0027\n  on-error: \u0027#690005\u0027\n  error-container: \u0027#93000a\u0027\n  on-error-container: \u0027#ffdad6\u0027\n  primary-fixed: \u0027#8cf5e4\u0027\n  primary-fixed-dim: \u0027#6fd8c8\u0027\n  on-primary-fixed: \u0027#00201c\u0027\n  on-primary-fixed-variant: \u0027#005048\u0027\n  secondary-fixed: \u0027#c6e8f8\u0027\n  secondary-fixed-dim: \u0027#abcbdb\u0027\n  on-secondary-fixed: \u0027#001f29\u0027\n  on-secondary-fixed-variant: \u0027#2b4b58\u0027\n  tertiary-fixed: \u0027#ffdbd0\u0027\n  tertiary-fixed-dim: \u0027#ffb59e\u0027\n  on-tertiary-fixed: \u0027#390b00\u0027\n  on-tertiary-fixed-variant: \u0027#77321a\u0027\n  background: \u0027#131313\u0027\n  on-background: \u0027#e5e2e1\u0027\n  surface-variant: \u0027#353534\u0027\ntypography:\n  headline-lg:\n    fontFamily: Geist\n    fontSize: 40px\n    fontWeight: \u0027600\u0027\n    lineHeight: 48px\n    letterSpacing: -0.02em\n  headline-lg-mobile:\n    fontFamily: Geist\n    fontSize: 30px\n    fontWeight: \u0027600\u0027\n    lineHeight: 36px\n    letterSpacing: -0.02em\n  headline-md:\n    fontFamily: Geist\n    fontSize: 24px\n    fontWeight: \u0027500\u0027\n    lineHeight: 32px\n  body-lg:\n    fontFamily: Geist\n    fontSize: 18px\n    fontWeight: \u0027400\u0027\n    lineHeight: 28px\n  body-md:\n    fontFamily: Geist\n    fontSize: 16px\n    fontWeight: \u0027400\u0027\n    lineHeight: 24px\n  label-md:\n    fontFamily: JetBrains Mono\n    fontSize: 14px\n    fontWeight: \u0027500\u0027\n    lineHeight: 20px\n    letterSpacing: 0.05em\n  label-sm:\n    fontFamily: JetBrains Mono\n    fontSize: 12px\n    fontWeight: \u0027500\u0027\n    lineHeight: 16px\n    letterSpacing: 0.05em\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  unit: 4px\n  container-max: 1200px\n  gutter: 24px\n  margin-mobile: 16px\n  margin-desktop: 48px\n---\n\n## Brand \u0026 Style\nThe design system embodies a high-performance, technical aesthetic tailored for developer tools and sophisticated SaaS environments. The brand personality is precise, focused, and quietly powerful. It targets power users who value efficiency and deep focus over decorative flair.\n\nThe visual style is a fusion of **Minimalism** and **Geist-inspired Technicality**. It leverages a deep monochromatic foundation punctuated by a single, vibrant turquoise accent. The interface feels \"engineered\" rather than \"decorated,\" utilizing rigorous grid alignment and deliberate whitespace to manage cognitive load. The emotional response is one of calm control and professional-grade reliability.\n\n## Colors\nThe palette is rooted in an \"Obsidian\" dark theme, utilizing a layered approach to blacks and grays to create environmental depth without relying on heavy shadows.\n\n- **Primary (#2a9d8f):** A focused turquoise blue used exclusively for primary actions, active states, and critical information highlights.\n- **Secondary (#264653):** A muted navy-teal used for subtle background fills on secondary interactive elements.\n- **Surface \u0026 Neutral:** The background is a true-black (#121212) to maximize OLED efficiency and contrast. Surface containers use a slightly elevated charcoal (#1e1e1e).\n- **Accents:** Use success (emerald), warning (amber), and error (crimson) minimally, ensuring they are desaturated to maintain the dark-mode harmony.\n\n## Typography\nTypography is the core structural element. **Geist** provides a clean, neutral sans-serif foundation for most interface elements, ensuring readability and a modern technical feel. \n\n**JetBrains Mono** is utilized for labels, metadata, and code snippets to reinforce the developer-centric aesthetic. All typography should maintain high contrast against the dark background. Use \"Body-md\" for general reading and \"Label-sm\" for all caps metadata.\n\n## Layout \u0026 Spacing\nThe layout follows a **Fixed Grid** philosophy for desktop and a fluid single-column approach for mobile. \n\n- **Navigation:** The system moves away from bottom bars and complex sidebars in favor of a clean, single-page flow or a top-aligned \"minimalist utility bar.\" \n- **Structure:** Use a 12-column grid on desktop (max-width 1200px) and a single-column layout on mobile. \n- **Rhythm:** All spacing is based on a 4px baseline unit. Prefer generous padding within cards (24px) to ensure the dark theme feels airy rather than cramped. Elements should be grouped logically using \"proximity over borders.\"\n\n## Elevation \u0026 Depth\nIn this design system, depth is communicated through **Tonal Layering** and **Low-Contrast Outlines** rather than physical shadows.\n\n- **Level 0 (Background):** #121212 (The void).\n- **Level 1 (Cards/Sections):** #1e1e1e with a 1px border of #333333.\n- **Level 2 (Modals/Popovers):** #252525 with a slightly brighter border (#444444).\n- **Interactions:** Use subtle inner-glows (0.5px white at 10% opacity) on primary buttons to suggest a slight tactile lift without breaking the minimalist plane.\n\n## Shapes\nThe shape language is \"Soft-Technical.\" Elements use a subtle **0.25rem (4px)** corner radius. This creates a precision-engineered look that feels modern but avoids the aggressive sharpness of pure brutalism.\n\n- **Small elements (Buttons/Inputs):** 4px (Soft).\n- **Large elements (Cards/Containers):** 8px (Rounded-lg).\n- **Interactive States:** Maintain consistent radii across all states (hover, active, focus).\n\n## Components\n- **Buttons:** Primary buttons use a solid turquoise (#2a9d8f) background with black text for maximum legibility. Secondary buttons are outlined with #333333.\n- **Inputs:** Fields are dark (#1e1e1e) with a subtle bottom border or 1px perimeter border. Focus states must glow with a 2px turquoise outer stroke.\n- **Cards:** No shadows. Use tonal separation and a fine 1px border. Content inside cards should follow the 24px internal padding rule.\n- **Chips/Badges:** Use JetBrains Mono for text. Backgrounds should be low-opacity versions of the primary color (e.g., turquoise at 15% opacity).\n- **Navigation:** A single-page header containing only essential actions. Use a \"Breadcrumb + Action\" pattern to keep the UI clean and focused on the current task.\n- **Data Visualization:** Use turquoise as the primary data point color, supported by neutral grays for secondary data sets.",
+                                       "font":  "GEIST",
+                                       "headlineFont":  "GEIST",
+                                       "headlineFontFamily":  "Geist",
+                                       "labelFont":  "JETBRAINS_MONO",
+                                       "labelFontFamily":  "Jetbrains Mono",
+                                       "namedColors":  {
+                                                           "background":  "#131313",
+                                                           "error":  "#ffb4ab",
+                                                           "error_container":  "#93000a",
+                                                           "inverse_on_surface":  "#313030",
+                                                           "inverse_primary":  "#006a60",
+                                                           "inverse_surface":  "#e5e2e1",
+                                                           "on_background":  "#e5e2e1",
+                                                           "on_error":  "#690005",
+                                                           "on_error_container":  "#ffdad6",
+                                                           "on_primary":  "#003731",
+                                                           "on_primary_container":  "#00302a",
+                                                           "on_primary_fixed":  "#00201c",
+                                                           "on_primary_fixed_variant":  "#005048",
+                                                           "on_secondary":  "#123441",
+                                                           "on_secondary_container":  "#99baca",
+                                                           "on_secondary_fixed":  "#001f29",
+                                                           "on_secondary_fixed_variant":  "#2b4b58",
+                                                           "on_surface":  "#e5e2e1",
+                                                           "on_surface_variant":  "#bcc9c6",
+                                                           "on_tertiary":  "#5a1c06",
+                                                           "on_tertiary_container":  "#501502",
+                                                           "on_tertiary_fixed":  "#390b00",
+                                                           "on_tertiary_fixed_variant":  "#77321a",
+                                                           "outline":  "#879390",
+                                                           "outline_variant":  "#3d4947",
+                                                           "primary":  "#6fd8c8",
+                                                           "primary_container":  "#30a193",
+                                                           "primary_fixed":  "#8cf5e4",
+                                                           "primary_fixed_dim":  "#6fd8c8",
+                                                           "secondary":  "#abcbdb",
+                                                           "secondary_container":  "#2b4b58",
+                                                           "secondary_fixed":  "#c6e8f8",
+                                                           "secondary_fixed_dim":  "#abcbdb",
+                                                           "surface":  "#131313",
+                                                           "surface_bright":  "#393939",
+                                                           "surface_container":  "#201f1f",
+                                                           "surface_container_high":  "#2a2a2a",
+                                                           "surface_container_highest":  "#353534",
+                                                           "surface_container_low":  "#1c1b1b",
+                                                           "surface_container_lowest":  "#0e0e0e",
+                                                           "surface_dim":  "#131313",
+                                                           "surface_tint":  "#6fd8c8",
+                                                           "surface_variant":  "#353534",
+                                                           "tertiary":  "#ffb59e",
+                                                           "tertiary_container":  "#d3795b",
+                                                           "tertiary_fixed":  "#ffdbd0",
+                                                           "tertiary_fixed_dim":  "#ffb59e"
+                                                       },
+                                       "overrideNeutralColor":  "#121212",
+                                       "overridePrimaryColor":  "#2a9d8f",
+                                       "overrideSecondaryColor":  "#264653",
+                                       "roundness":  "ROUND_FOUR",
+                                       "spacing":  {
+                                                       "container-max":  "1200px",
+                                                       "gutter":  "24px",
+                                                       "margin-desktop":  "48px",
+                                                       "margin-mobile":  "16px",
+                                                       "unit":  "4px"
+                                                   },
+                                       "spacingScale":  2,
+                                       "typography":  {
+                                                          "body-lg":  {
+                                                                          "fontFamily":  "Geist",
+                                                                          "fontSize":  "18px",
+                                                                          "fontWeight":  "400",
+                                                                          "lineHeight":  "28px"
+                                                                      },
+                                                          "body-md":  {
+                                                                          "fontFamily":  "Geist",
+                                                                          "fontSize":  "16px",
+                                                                          "fontWeight":  "400",
+                                                                          "lineHeight":  "24px"
+                                                                      },
+                                                          "headline-lg":  {
+                                                                              "fontFamily":  "Geist",
+                                                                              "fontSize":  "40px",
+                                                                              "fontWeight":  "600",
+                                                                              "letterSpacing":  "-0.02em",
+                                                                              "lineHeight":  "48px"
+                                                                          },
+                                                          "headline-lg-mobile":  {
+                                                                                     "fontFamily":  "Geist",
+                                                                                     "fontSize":  "30px",
+                                                                                     "fontWeight":  "600",
+                                                                                     "letterSpacing":  "-0.02em",
+                                                                                     "lineHeight":  "36px"
+                                                                                 },
+                                                          "headline-md":  {
+                                                                              "fontFamily":  "Geist",
+                                                                              "fontSize":  "24px",
+                                                                              "fontWeight":  "500",
+                                                                              "lineHeight":  "32px"
+                                                                          },
+                                                          "label-md":  {
+                                                                           "fontFamily":  "JetBrains Mono",
+                                                                           "fontSize":  "14px",
+                                                                           "fontWeight":  "500",
+                                                                           "letterSpacing":  "0.05em",
+                                                                           "lineHeight":  "20px"
+                                                                       },
+                                                          "label-sm":  {
+                                                                           "fontFamily":  "JetBrains Mono",
+                                                                           "fontSize":  "12px",
+                                                                           "fontWeight":  "500",
+                                                                           "letterSpacing":  "0.05em",
+                                                                           "lineHeight":  "16px"
+                                                                       }
+                                                      }
+                                   }
+                     },
+    "name":  "assets/2e16b6787e2a4de7a2c837d5936cf776",
+    "version":  "1"
+}
